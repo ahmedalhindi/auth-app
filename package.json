@@ -1,0 +1,29 @@
+{
+  "name": "auth-app",
+  "version": "1.0.0",
+  "description": "a simple auth-app using node and mongo",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedalhindi/auth-app.git"
+  },
+  "keywords": [
+    "auth",
+    "express",
+    "node",
+    "mongo",
+    "docker"
+  ],
+  "author": "ahmedalhindi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmedalhindi/auth-app/issues"
+  },
+  "homepage": "https://github.com/ahmedalhindi/auth-app#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

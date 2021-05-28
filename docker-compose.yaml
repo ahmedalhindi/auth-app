@@ -1,9 +1,13 @@
 version: "3.8"
 services:
-    web:
+    api:
         build: ./api
         volumes: 
             - ./api/src:/app/src
+        ports:
+            - 3000:3000
+        environment: 
+            DB_URL: mongodb://db/auth-app
     db:
         image: mongo:4.0-xenial
         ports:

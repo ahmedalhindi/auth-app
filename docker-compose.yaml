@@ -1,8 +1,16 @@
 version: "3.8"
 services:
-    api:
+    web:
         build: ./api
-    
+        volumes: 
+            - ./api/src:/app/src
+    db:
+        image: mongo:4.0-xenial
+        ports:
+            - 27017:27017
+        volumes:
+            - dbdata:/data/db
+            - dbconfig:/data/configdb
 volumes:
-    authdb:
+    dbdata:
     dbconfig:

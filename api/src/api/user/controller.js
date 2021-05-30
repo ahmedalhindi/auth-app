@@ -4,7 +4,7 @@ const auth = require("../../middleware/auth")
 
 router.get("/me", auth,  async (req, res) => {
   const user =  await User.findId(req.user._id)
-  res.status(400).send(user)
+  res.status(200).send(user)
 })
 
 router.post("/", async (req, res) => {

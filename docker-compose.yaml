@@ -6,6 +6,8 @@ services:
             - ./api/src:/app/src
         ports:
             - 3000:3000
+        environment:
+            DB_URL: mongodb://db/auth-app
         env_file: 
             ./api/.env
             
